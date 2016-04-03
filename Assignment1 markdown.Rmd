@@ -3,6 +3,7 @@ title: "Reprpoducible Research"
 author: "EDLP"
 date: "April 3, 2016"
 output: html_document
+keep_md: true
 ---
 
 ### About
