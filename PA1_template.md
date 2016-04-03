@@ -118,7 +118,7 @@ hist(Total_Steps$steps,
      col = 'grey')
 ```
 
-![]((blob/master//tree/master/instructions_fig/unnamed-chunk-8-1.png)
+![](/blob/master/instructions_fig/unnamed-chunk-8-1.png)
 
 ###Calculate and report the mean and median total number of steps taken per day
 ####Calculate the mean
@@ -156,7 +156,7 @@ legend('topright',
 )
 ```
 
-![]((blob/master//tree/master/instructions_fig/unnamed-chunk-11-1.png)
+![](/blob/master/instructions_fig/unnamed-chunk-11-1.png)
   
 ###What is the average daily activity pattern?
 #### Make a timeseries plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
@@ -200,7 +200,7 @@ legend("topright",
 )
 ```
 
-![]((blob/master//tree/master/instructions_fig/unnamed-chunk-14-1.png)
+![](/blob/master/instructions_fig/unnamed-chunk-14-1.png)
   
 ###Imputing missing values
 ####Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)
@@ -238,7 +238,7 @@ hist(Total_Steps$steps, main = paste("Total Steps Each Day"), col="grey", xlab="
 legend("topright", c("Imputed", "Non-imputed"), col=c("red", "grey"), lwd=10)
 ```
 
-![]((blob/master//tree/master/instructions_fig/unnamed-chunk-18-1.png)
+![](/blob/master/instructions_fig/unnamed-chunk-18-1.png)
   
 ####Calculate new mean and median for imputed data.
 
@@ -277,6 +277,6 @@ IntervalAvgSteps_i <- aggregate(steps ~ interval + dow, imputed_data, mean)
 xyplot(IntervalAvgSteps_i$steps ~ IntervalAvgSteps_i$interval|IntervalAvgSteps_i$dow, main="Average Steps per Day by Interval",xlab="Interval", ylab="Steps",layout=c(1,2), type="l")
 ```
 
-![]((blob/master//tree/master/instructions_fig/unnamed-chunk-20-1.png)
+![](/blob/master/instructions_fig/unnamed-chunk-20-1.png)
   
 There is a higher peak earlier on weekdays, and more overall activity on weekends.
